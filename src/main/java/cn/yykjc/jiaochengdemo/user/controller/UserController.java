@@ -18,6 +18,7 @@ public class UserController {
 
     @Autowired
     UserService userService;
+    //自动注入
 
     @ResponseBody
     @RequestMapping("/getAll")
@@ -40,4 +41,5 @@ public class UserController {
         userService.save(userEntity);
         return "success";
     }
+    //测试一下改动代码后，再次上传GitHub
 }
